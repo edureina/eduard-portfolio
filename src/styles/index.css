@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small global tweaks */
+html, body, #root { height: 100%; }
+body {
+  @apply bg-gray-50 text-gray-900 antialiased;
+  transition: background-color .3s, color .3s;
+}
+
+/* dark mode */
+.dark body {
+  --tw-bg-opacity: 1;
+  background-color: #0f172a; /* slate-900 */
+  color: #e6eef8;
+}
+
+/* avatar border */
+.avatar-frame {
+  box-shadow: 0 10px 30px rgba(2,6,23,0.35);
+  border-radius: 9999px;
+  overflow: hidden;
+}
